@@ -1,0 +1,175 @@
+/* 通用样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 页面基础设置 */
+body {
+  font-family: "Microsoft YaHei", sans-serif ;
+    min-height: 100vh;
+    color: #000000;
+  }
+.banner {
+        background: url(../img/shu.jpg) no-repeat center center/cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      }
+.left-icons, .right-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 16px;
+}
+
+/* 个人信息区域 */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -90px;
+}
+
+/* 头像样式 */
+.avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+/* 昵称 */
+.nickname {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0 8px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* 用户名 */
+.username {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+/* 市民称号按钮 */
+.title-btn {
+  padding: 6px 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.title-btn:hover {
+  background: rgba(255,255,255,1);
+}
+
+/* 引用文案 */
+.quote {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+/* 个性签名 */
+.signature {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.signature p {
+  margin-bottom: 10px;
+}
+
+.signature .icon {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+ /* 响应式 */
+      @media (max-width: 600px) {
+        .profile {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .profile-info h2 {
+          font-size: 1.5rem;
+        }
+        .video-item video {
+          height: 140px;
+        }
+      }
+    h3{padding-top: 30px;
+	padding-bottom: 10px;
+	color: #ffcaf7;
+	font-size: 30px;
+	-webkit-text-stroke: #000000 0.5px;/* 字体描边 */
+		text-align: center}
+	.zi{
+		text-align: center;
+		color: #ccc;
+	}
+	.pic-box{
+		margin: 40px auto;
+		max-width: 1200px;      /* 限制视频最大宽度，避免过宽 */
+		width: 100%;           /* 占满父容器宽度 */
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		flex-wrap: nowrap;
+		box-sizing: border-box;
+	}
+	img {
+        width: 22%;
+		height: auto;
+		border-radius: 8px;
+		object-fit: cover;
+	}
+	  /* 容器：水平居中 + 可选垂直居中 */
+	  .video-box {
+	    /* 水平居中 */
+	    margin: 40px 20px;        
+	    /*max-width: 800px;      /* 限制视频最大宽度，避免过宽 */
+	    width: 100%;           /* 占满父容器宽度 */
+	    display: flex;
+		justify-content: center;
+		gap: 24px;
+		flex-wrap: wrap;
+	    /* 如需垂直居中，可加以下代码（结合视口高度） */
+	    /* display: flex;
+	       justify-content: center;
+	       align-items: center;
+	       min-height: 100vh; */
+	  }
+	  
+	  /* 视频本身：自适应比例 */
+	  video {
+	    width: 400px;    /* 宽度填满容器 */
+	    height: auto;   /* 高度自动适配，保持宽高比 */
+	    display: block; /* 消除底部间隙 */
+		border-radius: 8px;/* 圆角 */
+	  }
